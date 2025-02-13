@@ -1,40 +1,74 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# To-Do List Application
 
-## Getting Started
+This is a simple To-Do List application built with Next.js, Tailwind CSS, and MongoDB.
 
-First, run the development server:
+## 🚀 Features
+
+- Add tasks
+- Delete tasks
+- Responsive UI
+- MongoDB integration
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** MongoDB Atlas
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/snehap08/to-do-list.git
+cd to-do-list
+npm install
+```
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in the root directory and add the following:
+
+```bash
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<databaseName>
+```
+
+## 🚀 Run the Application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🖼️ Folder Structure
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```plaintext
+📦 to-do-list
+├── 📂 pages
+│   └── 📜 page.js (Main UI)
+├── 📂 api
+│   └── 📜 todos.js (API routes)
+├── 📂 public
+├── 📂 styles
+├── 📜 .env.local (Environment Variables)
+├── 📜 package.json
+└── 📜 README.md
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 API Endpoints
 
-## Learn More
+- `GET /api/todos`: Fetch all tasks
+- `POST /api/todos`: Add a new task
+- `DELETE /api/todos`: Delete a task
 
-To learn more about Next.js, take a look at the following resources:
+## 🛑 Known Issues
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Make sure to whitelist your IP address in MongoDB Atlas.
+- Run the application on Node.js 18+ for better compatibility.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Feel free to fork the repository, make improvements, and create pull requests!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# to-do-list
->>>>>>> d6661fc1e909bbbe2f62dd8586969c9d12af93e8
+MIT License
+
+Happy Coding! 🚀
